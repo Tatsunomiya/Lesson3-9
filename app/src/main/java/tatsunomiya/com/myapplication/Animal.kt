@@ -20,7 +20,7 @@ abstract class Animal {
     var name: String
     var age: Int
 
-    var hobby:String
+   open var hobby:String
 
 
     constructor(name: String,  age:Int, hobby: String)  {

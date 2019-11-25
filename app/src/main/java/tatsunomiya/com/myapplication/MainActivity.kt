@@ -10,7 +10,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val human = Human("鈴木" ,25)
+        val human = Human("鈴木" ,25,"プログラミング")
+        val human2 = Human("田中",25, "プログラミング")
  //  どうやってHumanインスタンスを二個作って、 関数hobbyを実行しようか？
         //  Humanクラスのコンストラクタはname とageしか入れる事しかできませんでした。
 
@@ -24,11 +25,11 @@ class MainActivity : AppCompatActivity() {
 
 
         human.say()
-        Log.d("tasunomiya", "私の名前は" + human.name + "です"  )
-        Log.d("tatshunomiya", "私の歳は" + human.age + "です")
+        Log.d("tasunomiya", "私の名前は" + human.name + "です" +"年は" + human.age + "歳です" )
+//        Log.d("tatshunomiya", "年は" + human.age + "歳です")
 
-        human.think()
-        Log.d("tashunomiya" ,"私は" + human.hobby()+"について考える")
+        human2.think()
+        Log.d("tashunomiya" ,"私は" + human2.hobby+"について考える")
 
 
 
