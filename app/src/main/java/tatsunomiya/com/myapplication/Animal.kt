@@ -20,13 +20,11 @@ abstract class Animal {
     var name: String
     var age: Int
 
-   open var hobby:String
 
 
     constructor(name: String,  age:Int, hobby: String)  {
         this.name = name
         this.age = age
-        this.hobby = hobby
     }
 
 
